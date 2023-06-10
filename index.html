@@ -11,7 +11,9 @@
 </head>
 <body>
 <div class="container">
-    <div class="weather-app">
+    <div class="weather-app-wrapper">
+        <div class="weather-app">
+            <div class="overview">
 
     <h1>
         Tehran, Iran
@@ -20,10 +22,19 @@
         <li> Saturday 20:00 </li>
         <li> Clear with periodic clouds </li>
     </ul>
+
+           </div>
+
     <div class="row">
         <div class="col-6">
-            <img src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png" alt="clear">
-            28 °C | °F
+            <div class="d-flex weather-icon">
+            <img src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png" 
+            alt="clear" class="float-start"/>
+             <div class="float-start"> 
+                <strong>28</strong><span class="units">°C | <a href="#">°F</a></span> 
+            </div>
+            
+            </div>
         </div>
         <div class="col-6">
             <ul>
@@ -33,12 +44,14 @@
             </ul>
         </div>
     </div>
+    </div>
+
     <small>
         This <a href="https://github.com/marjannateghi/Vanilla-Weather-App" target="_blank"> Open-Source App</a> is made by
         <em> Marjan Nateghi </em>
     </small>
-    </div>
-   
+
+    </div>     
 </div>
 
 <script src="D:\SheCodes\2) Plus\week7\Vanilla-Weather-App\src\app.js"></script>

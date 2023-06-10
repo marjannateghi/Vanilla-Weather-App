@@ -2,14 +2,6 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.weather-app {
-    max-width: 600px;
-    margin: 10px  auto;
-    padding: 20px;
-    border: 1px solid #878787;
-    border-radius: 5px;
-}
-
 h1 {
     color: #878787;
     font-size: 30px;
@@ -28,5 +20,43 @@ li {
     color: #878787;
     font-size: 15px;
     line-height: 20px;
-
 }
+
+.weather-app-wrapper {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.weather-app {
+    padding: 20px;
+    border: 1px solid #878787;
+    border-radius: 5px;
+}
+
+.overview {
+    margin-bottom: 25px;
+}
+
+.weather-icon img {
+    margin-right: 5px;
+    margin-top: -10px;
+    width: 70px;
+}
+
+.weather-icon strong {
+    color: black;
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 400;
+}
+
+.weather-icon .units {
+    font-size: 15px;
+    position: relative;
+    top: -18px;
+    left: -1px;
+}
+
+
+
+
