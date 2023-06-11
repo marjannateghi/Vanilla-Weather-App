@@ -1,5 +1,5 @@
 function showTemperature(response) {
-    console.log(response.data.weather[0].description);
+    console.log(response.data);
     let temperatureElement = document.querySelector("#temperature");
     temperatureElement.innerHTML = Math.round(response.data.main.temp);
     
@@ -7,7 +7,13 @@ function showTemperature(response) {
     cityElement.innerHTML = response.data.name;
 
     let descriptionElement = document.querySelector("#description");
-    descriptionElement = response.data.weather[0].description;
+    descriptionElement.innerHTML = response.data.weather[0].description;
+
+    let humidityElement = document.querySelector("#humidity");
+    humidityElement.innerHTML = response.data.main.humidity;
+
+    let windElement = document.querySelector("#wind");
+    windElement.innerHTML = response.data.wind.speed;
 }
 
 let apiKey = "233f4519d2bc22454f1e109671d01c65";
