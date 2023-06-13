@@ -14,11 +14,20 @@
 <div class="container">
     <div class="weather-app-wrapper">
         <div class="weather-app">
-            <div class="overview">
 
-    <h1 id="city">
-        
-    </h1>
+            <form id="search-form" class="mb-3">
+              <did class="row">
+                <div class="col-9">
+                  <input type="search" placeholder="Type a city ..." autocomplete="on" class="form-control">
+                </div>
+                <div class="col-3">
+                  <input type="submit" value="Search" class="btn btn-primary w-100">
+                </div>
+              </did>
+            </form>
+            
+    <div class="overview">
+    <h1 id="city"></h1>
     <ul>
         <li> Last updated: <span id="date"></span></li>
         <li id="description"></li>
