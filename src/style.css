@@ -29,6 +29,7 @@ li::first-letter {
 a {
     text-decoration: none;
 }
+
 .weather-app-wrapper {
     max-width: 600px;
     margin: 20px auto;
