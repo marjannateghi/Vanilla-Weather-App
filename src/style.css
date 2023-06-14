@@ -65,6 +65,10 @@ a {
     left: -1px;
 }
 
+.weather-icon .active {
+    color: black;
+    cursor: default;
+}
 
 
 
